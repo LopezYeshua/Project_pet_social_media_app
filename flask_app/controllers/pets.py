@@ -43,6 +43,7 @@ def dashboard(displayed_pet):
 
 @app.route('/message/pet/<int:id>', methods=['POST'])
 def message(id):
+    # ! TODO
     friend_data = {'id': id}
     pet_data = {'id': session['pet_id']}
     user_pet=Pet.get_one_user_pet(pet_data)
