@@ -1,0 +1,212 @@
+.adjust {
+    margin: 0;
+    align-self: center;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.custom-btn {
+    text-decoration: none;
+    color: inherit;
+    width: 130px;
+    height:auto;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: transparent;
+    cursor: pointer;
+    word-wrap: break-word;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.auto-box {
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-image: url('/static/assets/clouds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.body-row {
+    height: 50%;
+}
+
+
+.notifications {
+    height: 200px;
+}
+
+.friend-container {
+    width: 6.5em;
+    min-height: 100px;
+    background-color: aqua;
+}
+
+.friend-image {
+    width: 75%;
+}
+
+.circle-background {
+    width: 80%;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Start of dashboard css */
+
+.sign {
+    box-shadow: inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.post-friend-image {
+    width: 40px;
+}
+
+.title {
+    font-size: medium;
+}
+
+h4 {
+    font-size:large;
+}
+
+.side-navbar {
+    min-height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    position: sticky;
+    top:30%;
+    box-shadow: inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-pop {
+    border: 1px solid 
+}
+.btn-pop:hover {
+    background-color: skyblue;
+}
+
+
+.segmented-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin: 1em 0;
+}
+
+.logout {
+    width: 10ch;
+}
+
+.posts-shadow {
+    box-shadow: 7px 5px 5px;
+}
+
+.btn-side-bar {
+    border: none;
+    color: #000;
+    word-wrap: break-word;
+}
+
+.btn-side-bar:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rt1;
+    z-index: -1;
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-side-bar:hover {
+    color: #000;
+}
+
+.btn-side-bar:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-side-bar:active {
+    top:2px;
+}
+
+/* Start of profile css */
+.profile-container {
+    min-height: 100px;
+    width: 25vh;
+    position: relative;
+    top: 30vh;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+li {
+    list-style:none;
+}
+
+/* Start of friends css */
+.vertical-nav-container {
+    min-height: 100px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 3px;
+    text-align: start;
+    background-color: white;
+    border-radius: 5%;
+    position: sticky;
+    top:50%;
+    box-shadow: inset 2px 2px 2px 0px 
+    rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+
+.unstyle {
+    text-decoration: none;
+    color: inherit;
+}
