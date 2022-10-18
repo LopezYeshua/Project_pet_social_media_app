@@ -39,7 +39,30 @@
             </div>
         </div>
         <div class="col">Friend Requests
-            <div class="vertical-nav-container"></div>
+            <div class="vertical-nav-container">
+                {% for one_pet in all_pets %}
+                <div class="row">
+                    <div class="col">
+                        <a class="d-block mb-4 unstyle" href="/friend/pet/{{one_pet.id}}">
+                        {% if one_pet.animal == 'dog': %}
+                            <img class="post-friend-image" src="{{url_for('static', filename='/assets/dog.png')}}" alt="{{one_pet.name}}">
+                        {% elif one_pet.animal == 'cat': %}
+                            <img class="post-friend-image" src="{{url_for('static', filename='/assets/cat.png')}}" alt="{{one_pet.name}}">
+                        {% elif one_pet.animal == 'bird': %}
+                            <img class="post-friend-image" src="{{url_for('static', filename='/assets/bird.png')}}" alt="{{one_pet.name}}">
+                        {% endif %}
+                            <p class="d-inline">{{one_pet.name}}</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex mb-4">
+                            <a class="custom-btn auto-box" href="#">Add</a>
+                            <a class="custom-btn auto-box" href="#">Reject</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
         <div class="col">Discover Friends
             <div class="vertical-nav-container">

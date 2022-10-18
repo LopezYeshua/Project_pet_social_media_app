@@ -102,6 +102,9 @@
                     {% endif %}
                     <h4 class="">{{post.name}}</h4>
                     <p>Posted: {{post.created_at}}</p>
+                    {% if post.pet_id == pet.id %}
+                        <a class="custom-btn auto-box" href="#">Delete</a>
+                    {% endif %}
                 </header>
                 <div class="text-center card-body">
                     <p>{{post.description}}</p>
